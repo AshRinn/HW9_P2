@@ -99,7 +99,7 @@ for (int r = 0; r < N_ROWS; r++)
 
 	{
 		if (grade[r][2] < lowest)
-			lowest = grade[r][2];
+			grade[r][2] = lowest;
 		else if (grade[r][3] < lowest)
 			lowest = grade[r][3];
 		else if (grade[r][4] < lowest)
@@ -107,7 +107,7 @@ for (int r = 0; r < N_ROWS; r++)
 	}
   lowest = 0;
 	return grade[N_ROWS][c];
-}
+} 
   }
 /*void calcAverage(int test1, int test2, int test3, int test4, int test5,int lowest)
 {
